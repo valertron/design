@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentApi", "FluentApi\Flue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfLogger", "PerfLogger\PerfLogger.csproj", "{F5FA2448-E917-471F-ACBE-8C0581B9432A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyElimination", "DependencyElimination\DependencyElimination.csproj", "{5AB50DC0-36CA-4E4F-BA6B-2B530C3C297D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F5FA2448-E917-471F-ACBE-8C0581B9432A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5FA2448-E917-471F-ACBE-8C0581B9432A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5FA2448-E917-471F-ACBE-8C0581B9432A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB50DC0-36CA-4E4F-BA6B-2B530C3C297D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB50DC0-36CA-4E4F-BA6B-2B530C3C297D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB50DC0-36CA-4E4F-BA6B-2B530C3C297D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB50DC0-36CA-4E4F-BA6B-2B530C3C297D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
