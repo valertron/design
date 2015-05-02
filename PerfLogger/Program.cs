@@ -8,7 +8,6 @@ namespace PerfLogger
 	{
 		static void Main(string[] args)
 		{
-			var perf = new PerfLogger();
 			var sum = 0.0;
 			using (PerfLogger.Measure(t => Console.WriteLine("for: {0}", t)))
 				for (var i = 0; i < 100000000; i++) sum += i;
@@ -24,18 +23,13 @@ namespace PerfLogger
 		{
 			private static Action<double> Action;
 			private static Stopwatch stopwatch;
-			public static PerfLogger instance;
-			public PerfLogger()
-			{
-				instance = this;
-			}
 
 			public static PerfLogger Measure(Action<double> action)
 			{
 				stopwatch = new Stopwatch();
 				stopwatch.Start();
 				Action = action;
-				return instance;
+				return new PerfLogger();
 			}
 
 			public void Dispose()
